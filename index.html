@@ -13,72 +13,36 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      width: 400px;
-      height: 600px;
       z-index: 9999;
-    }
-    @media screen and (max-width: 768px) {
-      #chatbot-container {
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-      }
-    }
-    #open-chatbot {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 10000;
-      padding: 10px 20px;
-      background-color: #000000;
-      color: #FFFFFF;
-      border: 2px solid #C0C0C0;
-      border-radius: 5px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    #open-chatbot svg {
-      margin-left: 10px;
     }
   </style>
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 </head>
 <body>
-  <button id="open-chatbot">
-    Chat with Cali
-    <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.63 3.55 1.69 4.94L2 22l5.06-1.69C8.45 20.37 10.15 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
-    </svg>
-  </button>
   <div id="chatbot-container" style="display:none;"></div>
   <script>
-    document.getElementById('open-chatbot').addEventListener('click', function() {
-      document.getElementById('chatbot-container').style.display = 'block';
-      window.botpressWebChat.init({
-        "composerPlaceholder": "Chat with Cali",
-        "botConversationDescription": "This chatbot was built by High Caliber Marketing",
-        "botId": "60b49ac4-9816-4883-ac38-0f1a72799634",
-        "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-        "messagingUrl": "https://messaging.botpress.cloud",
-        "clientId": "60b49ac4-9816-4883-ac38-0f1a72799634",
-        "webhookId": "208a1a0c-999b-4f56-8a7e-77c53c10dfbb",
-        "lazySocket": true,
-        "themeName": "prism",
-        "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/557777d1-a038-4f09-b6cb-d5ff3aadfade/v21451/style.css",
-        "frontendVersion": "v1",
-        "theme": "prism",
-        "themeColor": "#ffffff",
-        "allowedOrigins": [],
-        "containerWidth": "400px",
-        "containerHeight": "600px"
-      });
+    window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Cali",
+      "botConversationDescription": "This chatbot was built by High Caliber Marketing",
+      "botId": "60b49ac4-9816-4883-ac38-0f1a72799634",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "60b49ac4-9816-4883-ac38-0f1a72799634",
+      "webhookId": "208a1a0c-999b-4f56-8a7e-77c53c10dfbb",
+      "lazySocket": true,
+      "themeName": "prism",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/557777d1-a038-4f09-b6cb-d5ff3aadfade/v21451/style.css",
+      "frontendVersion": "v1",
+      "theme": "prism",
+      "themeColor": "#ffffff",
+      "allowedOrigins": [],
+      "containerWidth": "400px",
+      "containerHeight": "600px"
     });
   </script>
 </body>
 </html>
+
 
 
 
